@@ -4,7 +4,7 @@ module.exports = {
 	entry:"./src/App.js",
 	output:{
 		path:path.resolve(__dirname, 'dist'),
-		filename:"output.js"
+		filename:"final.js"
 	},
 	// loader-start
 	module:{
@@ -18,11 +18,6 @@ module.exports = {
 			}
 
 		]
-	},
-	// loader-end
-	devServer: {
-		static:path.join(__dirname,'dist'),
-		compress:true,
-		port:3500
 	}
+	// loader-end
 }
